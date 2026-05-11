@@ -21,8 +21,28 @@ namespace vizprog_eloadas_beadando_app
         {
             InitializeComponent();
 
-            DataContext context = new DataContext();
-            myDataGrid.ItemsSource = context.Diakok.ToList();
+            //DataContext context = new DataContext();
+            //myDataGrid.ItemsSource = context.Diakok.ToList();
+        }
+
+        private void Fajl_bezaras_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Adatok_diakok_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Adatok_jegyek_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Adatok_targyak_click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

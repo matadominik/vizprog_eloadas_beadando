@@ -6,8 +6,19 @@
         xmlns:local="clr-namespace:vizprog_eloadas_beadando_app"
         mc:Ignorable="d"
         Title="Napló" Height="450" Width="800">
-    <Grid>
-        <DataGrid x:Name="myDataGrid"/>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Fájl">
+                <MenuItem Header="Bezárás" Click="Fajl_bezaras_click"/>
+            </MenuItem>
+            <MenuItem Header="Adatok">
+                <MenuItem Header="Diákok" Click="Adatok_diakok_click"/>
+                <MenuItem Header="Jegyek" Click="Adatok_jegyek_click"/>
+                <MenuItem Header="Tárgyak" Click="Adatok_targyak_click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
 
-    </Grid>
+        </Grid>
+    </DockPanel>
 </Window>
