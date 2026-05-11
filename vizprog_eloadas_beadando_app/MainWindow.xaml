@@ -26,7 +26,7 @@
             </ToolBar>
         </ToolBarTray>
         <Grid>
-
+            <DataGrid x:Name="myDataGrid" AutoGenerateColumns="True"/>
         </Grid>
     </DockPanel>
 </Window>

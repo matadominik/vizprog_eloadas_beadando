@@ -5,7 +5,7 @@ using System.Text;
 
 namespace vizprog_eloadas_beadando_app
 {
-    public class DataContext : DbContext
+    public class AdatbazisContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -13,5 +13,7 @@ namespace vizprog_eloadas_beadando_app
         }
 
         public DbSet<Diak> Diakok { get; set; }
+        public DbSet<Jegy> Jegyek { get; set; }
+        public DbSet<Targy> Targyak { get; set; }
     }
 }
