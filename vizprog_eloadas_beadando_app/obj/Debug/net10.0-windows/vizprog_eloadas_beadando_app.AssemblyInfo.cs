@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vizprog_eloadas_beadando_app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9634d29f0f153fbb25a5ab7584a1acf227862145")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d84d55ecedf250c5a4a83067da3e35485dea0ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("vizprog_eloadas_beadando_app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vizprog_eloadas_beadando_app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

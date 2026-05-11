@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\diak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:diak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\diak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:diak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-11T12:42:47.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\DataContext.cs",
               "RelativeDocumentMoniker": "DataContext.cs",
@@ -43,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Diak.cs",
               "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\Diak.cs",
               "RelativeDocumentMoniker": "Diak.cs",
@@ -57,18 +73,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-11T12:42:47.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
