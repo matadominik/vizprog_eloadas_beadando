@@ -17,6 +17,14 @@
                 <MenuItem Header="Tárgyak" Click="Adatok_targyak_click"/>
             </MenuItem>
         </Menu>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="Hozzáadás"/>
+                <Button Content="Módosítás"/>
+                <Button Content="Törlés"/>
+                <Button Content="Frissítés"/>
+            </ToolBar>
+        </ToolBarTray>
         <Grid>
 
         </Grid>
