@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace vizprog_eloadas_beadando_app
 {
     /// <summary>
@@ -19,6 +20,9 @@ namespace vizprog_eloadas_beadando_app
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext context = new DataContext();
+            myDataGrid.ItemsSource = context.Diakok.ToList();
         }
     }
 }
