@@ -19,10 +19,10 @@
         </Menu>
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
-                <Button Content="Hozzáadás"/>
-                <Button Content="Módosítás"/>
-                <Button Content="Törlés"/>
-                <Button Content="Frissítés"/>
+                <Button Content="Hozzáadás" Click="Hozzaadas_click"/>
+                <Button Content="Módosítás" Click="Modositas_click"/>
+                <Button Content="Törlés" Click="Torles_click"/>
+                <Button Content="Frissítés" Click="Frissites_click"/>
             </ToolBar>
         </ToolBarTray>
         <Grid>
