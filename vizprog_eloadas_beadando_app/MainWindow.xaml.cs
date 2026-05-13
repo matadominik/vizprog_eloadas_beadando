@@ -84,7 +84,8 @@ namespace vizprog_eloadas_beadando_app
                 return;
             }
 
-            MessageBoxResult valasz = MessageBox.Show("Biztosan törölni szeretnéd?", "Törlés megerősítése", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            MessageBoxResult valasz = MessageBox.Show("Biztosan törölni szeretnéd?", "Törlés megerősítése", 
+                MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (valasz != MessageBoxResult.Yes) return;
 
             if (aktivTabla == "diakok")

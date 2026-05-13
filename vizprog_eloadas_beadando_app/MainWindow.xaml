@@ -11,11 +11,9 @@
             <MenuItem Header="Fájl">
                 <MenuItem Header="Bezárás" Click="Fajl_bezaras_click"/>
             </MenuItem>
-            <MenuItem Header="Adatok">
-                <MenuItem Header="Diákok" Click="Adatok_diakok_click"/>
-                <MenuItem Header="Jegyek" Click="Adatok_jegyek_click"/>
-                <MenuItem Header="Tárgyak" Click="Adatok_targyak_click"/>
-            </MenuItem>
+            <MenuItem Header="Diákok" Click="Adatok_diakok_click"/>
+            <MenuItem Header="Jegyek" Click="Adatok_jegyek_click"/>
+            <MenuItem Header="Tárgyak" Click="Adatok_targyak_click"/>
         </Menu>
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
@@ -26,7 +24,7 @@
             </ToolBar>
         </ToolBarTray>
         <Grid>
-            <DataGrid x:Name="myDataGrid" AutoGenerateColumns="True"/>
+            <DataGrid x:Name="myDataGrid" AutoGenerateColumns="True" SelectionMode="Single"/>
         </Grid>
     </DockPanel>
 </Window>
