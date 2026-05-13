@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|c:\\users\\matal\\desktop\\mindent vagy semmit\\visual studio\\wpf\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{876CC9DA-BD59-70DC-8FA8-33BEAC87C6C1}|vizprog_eloadas_beadando_app.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +26,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -38,13 +38,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\matal\\Desktop\\Mindent vagy semmit\\Visual Studio\\WPF\\vizprog_eloadas_beadando\\vizprog_eloadas_beadando_app\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAwwE4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwD8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T12:42:47.17Z",
               "EditorCaption": ""

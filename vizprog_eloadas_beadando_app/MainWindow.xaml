@@ -5,16 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:vizprog_eloadas_beadando_app"
         mc:Ignorable="d"
-        Title="Napló" Height="450" Width="800">
+        Title="Napló" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Fájl">
                 <MenuItem Header="Bezárás" Click="Fajl_bezaras_click"/>
             </MenuItem>
+            
             <MenuItem Header="Diákok" Click="Adatok_diakok_click"/>
             <MenuItem Header="Jegyek" Click="Adatok_jegyek_click"/>
             <MenuItem Header="Tárgyak" Click="Adatok_targyak_click"/>
         </Menu>
+        
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
                 <Button Content="Hozzáadás" Click="Hozzaadas_click"/>
@@ -23,8 +26,131 @@
                 <Button Content="Frissítés" Click="Frissites_click"/>
             </ToolBar>
         </ToolBarTray>
-        <Grid>
-            <DataGrid x:Name="myDataGrid" AutoGenerateColumns="True" SelectionMode="Single"/>
+        
+        <Grid Margin="15">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280" />
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Column="0"
+                Background="#F2F2F2"
+                Padding="15"
+                CornerRadius="8">
+
+                <StackPanel 
+                    x:Name="inputPanel"
+                    Visibility="Collapsed">
+                    <StackPanel 
+                        x:Name="diakInput"
+                        Visibility="Collapsed">
+                        <TextBlock
+                            Text="Diák adatai"
+                            FontSize="22"
+                            FontWeight="Bold"
+                            Margin="0 0 0 20"/>
+
+                        <TextBlock Text="Név:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Osztály:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Fiú:" />
+
+                        <CheckBox
+                            Content="Igen"
+                            Margin="0 5 0 20" />
+                    </StackPanel>
+
+                    <StackPanel 
+                        x:Name="jegyInput"
+                        Visibility="Collapsed">
+                        <TextBlock
+                            Text="Jegyadatok"
+                            FontSize="22"
+                            FontWeight="Bold"
+                            Margin="0 0 0 20"/>
+
+                        <TextBlock Text="Diák ID:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Dátum:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Érték:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Típus:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Tárgy ID:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+                    </StackPanel>
+
+                    <StackPanel 
+                        x:Name="targyInput"
+                        Visibility="Collapsed">
+                        <TextBlock
+                            Text="Diák adatai"
+                            FontSize="22"
+                            FontWeight="Bold"
+                            Margin="0 0 0 20"/>
+
+                        <TextBlock Text="Név:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+
+                        <TextBlock Text="Kategória:" />
+
+                        <TextBox
+                            Height="30"
+                            Margin="0 5 0 12" />
+                    </StackPanel>
+
+                    <Button
+                        Content="Hozzáadás"
+                        Height="35"
+                        Margin="0 5" />
+
+                    <Button
+                        Content="Módosítás"
+                        Height="35"
+                        Margin="0 5" />
+
+                    <Button
+                        Content="Törlés"
+                        Height="35"
+                        Margin="0 5" />
+                </StackPanel>
+            </Border>
         </Grid>
+            <DataGrid x:Name="myDataGrid" AutoGenerateColumns="True" SelectionMode="Single"/>
     </DockPanel>
 </Window>

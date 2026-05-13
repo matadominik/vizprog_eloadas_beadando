@@ -36,18 +36,36 @@ namespace vizprog_eloadas_beadando_app
         private void Adatok_diakok_click(object sender, RoutedEventArgs e)
         {
             aktivTabla = "diakok";
+
+            inputPanel.Visibility = Visibility.Visible;
+            jegyInput.Visibility = Visibility.Collapsed;
+            targyInput.Visibility = Visibility.Collapsed;
+            diakInput.Visibility = Visibility.Visible;
+
             DiakokBetoltese();
         }
 
         private void Adatok_jegyek_click(object sender, RoutedEventArgs e)
         {
             aktivTabla = "jegyek";
+
+            inputPanel.Visibility = Visibility.Visible;
+            diakInput.Visibility = Visibility.Collapsed;
+            targyInput.Visibility = Visibility.Collapsed;
+            jegyInput.Visibility = Visibility.Visible;
+
             JegyekBetoltese();
         }
 
         private void Adatok_targyak_click(object sender, RoutedEventArgs e)
         {
             aktivTabla = "targyak";
+
+            inputPanel.Visibility = Visibility.Visible;
+            diakInput.Visibility = Visibility.Collapsed;
+            jegyInput.Visibility = Visibility.Collapsed;
+            targyInput.Visibility = Visibility.Visible;
+
             TargyakBetoltese();
         }
 
