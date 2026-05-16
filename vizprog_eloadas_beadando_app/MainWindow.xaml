@@ -291,7 +291,7 @@
         </Style>
 
         <Style TargetType="DataGrid">
-            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="{StaticResource TextMain}"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="RowBackground" Value="#1E293B"/>
@@ -305,6 +305,11 @@
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="SelectionMode" Value="Single"/>
             <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="RowHeaderWidth" Value="0"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserDeleteRows" Value="False"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="Margin" Value="0"/>
         </Style>
 
         <Style TargetType="DataGridColumnHeader">
@@ -364,7 +369,7 @@
                 <StackPanel DockPanel.Dock="Top"
                             Margin="20,24,20,20">
 
-                    <TextBlock Text="📘 Napló"
+                    <TextBlock Text="▧  Napló"
                                FontSize="28"
                                FontWeight="Bold"
                                Foreground="{StaticResource TextMain}"/>
@@ -374,7 +379,7 @@
                     <Button Style="{StaticResource SidebarButtonStyle}"
                             Click="VisszaFoMenu_click">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="🏠" FontSize="17" Margin="0,0,10,0"/>
+                            <TextBlock Text="⌂" FontSize="19" Margin="0,0,12,0"/>
                             <TextBlock Text="Főoldal" FontSize="15"/>
                         </StackPanel>
                     </Button>
@@ -382,7 +387,7 @@
                     <Button Style="{StaticResource SidebarButtonStyle}"
                             Click="Adatok_diakok_click">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="👨‍🎓" FontSize="17" Margin="0,0,10,0"/>
+                            <TextBlock Text="♟" FontSize="19" Margin="0,0,12,0"/>
                             <TextBlock Text="Diákok" FontSize="15"/>
                         </StackPanel>
                     </Button>
@@ -390,7 +395,7 @@
                     <Button Style="{StaticResource SidebarButtonStyle}"
                             Click="Adatok_jegyek_click">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="📝" FontSize="17" Margin="0,0,10,0"/>
+                            <TextBlock Text="▤" FontSize="19" Margin="0,0,12,0"/>
                             <TextBlock Text="Jegyek" FontSize="15"/>
                         </StackPanel>
                     </Button>
@@ -398,7 +403,7 @@
                     <Button Style="{StaticResource SidebarButtonStyle}"
                             Click="Adatok_targyak_click">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="📚" FontSize="17" Margin="0,0,10,0"/>
+                            <TextBlock Text="▥" FontSize="19" Margin="0,0,12,0"/>
                             <TextBlock Text="Tárgyak" FontSize="15"/>
                         </StackPanel>
                     </Button>
@@ -409,7 +414,7 @@
                     <Button Style="{StaticResource SidebarButtonStyle}"
                             Click="Fajl_bezaras_click">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="🚪" FontSize="17" Margin="0,0,10,0"/>
+                            <TextBlock Text="▣" FontSize="19" Margin="0,0,12,0"/>
                             <TextBlock Text="Kilépés" FontSize="15"/>
                         </StackPanel>
                     </Button>
@@ -450,7 +455,7 @@
                                 Background="{StaticResource SuccessBlue}"
                                 Click="Hozzaadas_click">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="➕" Foreground="White" Margin="0,0,6,0"/>
+                                <TextBlock Text="+" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                 <TextBlock Text="Hozzáadás" Foreground="White"/>
                             </StackPanel>
                         </Button>
@@ -459,7 +464,7 @@
                                 Background="{StaticResource WarningOrange}"
                                 Click="Modositas_click">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="✏️" Foreground="White" Margin="0,0,6,0"/>
+                                <TextBlock Text="✎" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                 <TextBlock Text="Módosítás" Foreground="White"/>
                             </StackPanel>
                         </Button>
@@ -468,7 +473,7 @@
                                 Background="{StaticResource DangerRed}"
                                 Click="Torles_click">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="🗑" Foreground="White" Margin="0,0,6,0"/>
+                                <TextBlock Text="⌫" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                 <TextBlock Text="Törlés" Foreground="White"/>
                             </StackPanel>
                         </Button>
@@ -477,7 +482,7 @@
                                 Background="{StaticResource PrimaryPurple}"
                                 Click="Frissites_click">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="🔄" Foreground="White" Margin="0,0,6,0"/>
+                                <TextBlock Text="↻" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                 <TextBlock Text="Frissítés" Foreground="White"/>
                             </StackPanel>
                         </Button>
@@ -500,7 +505,7 @@
                             Margin="0,0,0,26">
 
                         <StackPanel>
-                            <TextBlock Text="Üdv a Napló rendszerben 👋"
+                            <TextBlock Text="Üdv a Napló rendszerben"
                                        FontSize="32"
                                        FontWeight="Bold"/>
 
@@ -527,7 +532,7 @@
                                 Click="Adatok_diakok_click">
                             <StackPanel HorizontalAlignment="Center"
                                         VerticalAlignment="Center">
-                                <TextBlock Text="👨‍🎓"
+                                <TextBlock Text="♟"
                                            FontSize="46"
                                            HorizontalAlignment="Center"
                                            Margin="0,0,0,12"/>
@@ -552,7 +557,7 @@
                                 Click="Adatok_jegyek_click">
                             <StackPanel HorizontalAlignment="Center"
                                         VerticalAlignment="Center">
-                                <TextBlock Text="📝"
+                                <TextBlock Text="▤"
                                            FontSize="46"
                                            HorizontalAlignment="Center"
                                            Margin="0,0,0,12"/>
@@ -577,7 +582,7 @@
                                 Click="Adatok_targyak_click">
                             <StackPanel HorizontalAlignment="Center"
                                         VerticalAlignment="Center">
-                                <TextBlock Text="📚"
+                                <TextBlock Text="▥"
                                            FontSize="46"
                                            HorizontalAlignment="Center"
                                            Margin="0,0,0,12"/>
@@ -617,7 +622,7 @@
                                 Click="VisszaFoMenu_click">
 
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="⬅" Foreground="White" Margin="0,0,8,0"/>
+                                <TextBlock Text="←" Foreground="White" FontWeight="Bold" Margin="0,0,8,0"/>
                                 <TextBlock Text="Vissza a főoldalra" Foreground="White"/>
                             </StackPanel>
                         </Button>
@@ -714,7 +719,7 @@
                                             Background="{StaticResource SuccessBlue}"
                                             Click="Hozzaadas_click">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="➕" Foreground="White" Margin="0,0,6,0"/>
+                                            <TextBlock Text="+" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                             <TextBlock Text="Hozzáadás" Foreground="White"/>
                                         </StackPanel>
                                     </Button>
@@ -725,7 +730,7 @@
                                             Background="{StaticResource WarningOrange}"
                                             Click="Modositas_click">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="✏️" Foreground="White" Margin="0,0,6,0"/>
+                                            <TextBlock Text="✎" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                             <TextBlock Text="Módosítás" Foreground="White"/>
                                         </StackPanel>
                                     </Button>
@@ -736,7 +741,7 @@
                                             Background="{StaticResource DangerRed}"
                                             Click="Torles_click">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="🗑" Foreground="White" Margin="0,0,6,0"/>
+                                            <TextBlock Text="⌫" Foreground="White" FontWeight="Bold" Margin="0,0,7,0"/>
                                             <TextBlock Text="Törlés" Foreground="White"/>
                                         </StackPanel>
                                     </Button>
@@ -745,14 +750,28 @@
                         </Border>
 
                         <Border Grid.Column="2"
-                                Style="{StaticResource CardBorderStyle}"
-                                Padding="0">
+                                Background="{StaticResource CardBg}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="20"
+                                Padding="1"
+                                SnapsToDevicePixels="True">
 
-                            <DataGrid x:Name="myDataGrid"
-                                      AutoGenerateColumns="True"
-                                      SelectionMode="Single"
-                                      IsReadOnly="True"
-                                      SelectionChanged="myDataGrid_SelectionChanged"/>
+                            <Grid ClipToBounds="True">
+                                <DataGrid x:Name="myDataGrid"
+                                          AutoGenerateColumns="True"
+                                          SelectionMode="Single"
+                                          IsReadOnly="True"
+                                          SelectionChanged="myDataGrid_SelectionChanged"
+                                          HeadersVisibility="Column"
+                                          BorderThickness="0"
+                                          Background="Transparent"
+                                          RowHeaderWidth="0"
+                                          CanUserAddRows="False"
+                                          CanUserDeleteRows="False"
+                                          CanUserResizeRows="False"
+                                          Margin="0"/>
+                            </Grid>
                         </Border>
                     </Grid>
                 </Grid>
@@ -760,3 +779,4 @@
         </Grid>
     </Grid>
 </Window>
+    

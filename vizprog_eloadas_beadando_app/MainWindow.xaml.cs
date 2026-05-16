@@ -98,6 +98,31 @@ namespace vizprog_eloadas_beadando_app
             context = new AdatbazisContext();
         }
 
+        private bool BiztonsagosMentes()
+        {
+            try
+            {
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                string hiba = ex.InnerException != null
+                    ? ex.InnerException.Message
+                    : ex.Message;
+
+                MessageBox.Show(
+                    "Mentési hiba történt:\n\n" + hiba,
+                    "Adatbázis hiba",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
+
+                UjContext();
+                return false;
+            }
+        }
+
         private void DiakokBetoltese()
         {
             UjContext();
@@ -132,6 +157,26 @@ namespace vizprog_eloadas_beadando_app
             targyKategoriaTextBox.Text = "";
         }
 
+        private int KovetkezoDiakId()
+        {
+            if (context.Diakok.Any())
+            {
+                return context.Diakok.Max(d => d.id) + 1;
+            }
+
+            return 1;
+        }
+
+        private int KovetkezoTargyId()
+        {
+            if (context.Targyak.Any())
+            {
+                return context.Targyak.Max(t => t.id) + 1;
+            }
+
+            return 1;
+        }
+
         private void myDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (myDataGrid.SelectedItem == null)
@@ -139,24 +184,39 @@ namespace vizprog_eloadas_beadando_app
                 return;
             }
 
-            if (aktivTabla == "diakok" && myDataGrid.SelectedItem is Diak diak)
+            if (aktivTabla == "diakok")
             {
-                diakNevTextBox.Text = diak.nev;
-                diakOsztalyTextBox.Text = diak.osztaly;
-                diakFiuCheckBox.IsChecked = diak.fiu != 0;
+                Diak diak = myDataGrid.SelectedItem as Diak;
+
+                if (diak != null)
+                {
+                    diakNevTextBox.Text = diak.nev;
+                    diakOsztalyTextBox.Text = diak.osztaly;
+                    diakFiuCheckBox.IsChecked = diak.fiu != 0;
+                }
             }
-            else if (aktivTabla == "jegyek" && myDataGrid.SelectedItem is Jegy jegy)
+            else if (aktivTabla == "jegyek")
             {
-                jegyDiakIdTextBox.Text = jegy.diakid.ToString();
-                jegyDatumDatePicker.SelectedDate = jegy.datum;
-                jegyErtekTextBox.Text = jegy.ertek.ToString();
-                jegyTipusTextBox.Text = jegy.tipus;
-                jegyTargyIdTextBox.Text = jegy.targyid.ToString();
+                Jegy jegy = myDataGrid.SelectedItem as Jegy;
+
+                if (jegy != null)
+                {
+                    jegyDiakIdTextBox.Text = jegy.diakid.ToString();
+                    jegyDatumDatePicker.SelectedDate = jegy.datum;
+                    jegyErtekTextBox.Text = jegy.ertek.ToString();
+                    jegyTipusTextBox.Text = jegy.tipus;
+                    jegyTargyIdTextBox.Text = jegy.targyid.ToString();
+                }
             }
-            else if (aktivTabla == "targyak" && myDataGrid.SelectedItem is Targy targy)
+            else if (aktivTabla == "targyak")
             {
-                targyNevTextBox.Text = targy.nev;
-                targyKategoriaTextBox.Text = targy.kategoria;
+                Targy targy = myDataGrid.SelectedItem as Targy;
+
+                if (targy != null)
+                {
+                    targyNevTextBox.Text = targy.nev;
+                    targyKategoriaTextBox.Text = targy.kategoria;
+                }
             }
         }
 
@@ -286,13 +346,18 @@ namespace vizprog_eloadas_beadando_app
 
                 Diak ujDiak = new Diak
                 {
+                    id = KovetkezoDiakId(),
                     nev = diakNevTextBox.Text.Trim(),
                     osztaly = diakOsztalyTextBox.Text.Trim(),
                     fiu = diakFiuCheckBox.IsChecked == true ? 1 : 0
                 };
 
                 context.Diakok.Add(ujDiak);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 DiakokBetoltese();
                 MezoTorles();
@@ -316,7 +381,11 @@ namespace vizprog_eloadas_beadando_app
                 };
 
                 context.Jegyek.Add(ujJegy);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 JegyekBetoltese();
                 MezoTorles();
@@ -332,12 +401,17 @@ namespace vizprog_eloadas_beadando_app
 
                 Targy ujTargy = new Targy
                 {
+                    id = KovetkezoTargyId(),
                     nev = targyNevTextBox.Text.Trim(),
                     kategoria = targyKategoriaTextBox.Text.Trim()
                 };
 
                 context.Targyak.Add(ujTargy);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 TargyakBetoltese();
                 MezoTorles();
@@ -365,7 +439,10 @@ namespace vizprog_eloadas_beadando_app
                 kijeloltDiak.osztaly = diakOsztalyTextBox.Text.Trim();
                 kijeloltDiak.fiu = diakFiuCheckBox.IsChecked == true ? 1 : 0;
 
-                context.SaveChanges();
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 DiakokBetoltese();
                 MezoTorles();
@@ -385,7 +462,10 @@ namespace vizprog_eloadas_beadando_app
                 kijeloltJegy.tipus = tipus;
                 kijeloltJegy.targyid = targyId;
 
-                context.SaveChanges();
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 JegyekBetoltese();
                 MezoTorles();
@@ -402,7 +482,10 @@ namespace vizprog_eloadas_beadando_app
                 kijeloltTargy.nev = targyNevTextBox.Text.Trim();
                 kijeloltTargy.kategoria = targyKategoriaTextBox.Text.Trim();
 
-                context.SaveChanges();
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 TargyakBetoltese();
                 MezoTorles();
@@ -439,7 +522,11 @@ namespace vizprog_eloadas_beadando_app
 
                 context.Jegyek.RemoveRange(kapcsolodoJegyek);
                 context.Diakok.Remove(kijeloltDiak);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 DiakokBetoltese();
                 MezoTorles();
@@ -449,7 +536,11 @@ namespace vizprog_eloadas_beadando_app
             else if (aktivTabla == "jegyek" && myDataGrid.SelectedItem is Jegy kijeloltJegy)
             {
                 context.Jegyek.Remove(kijeloltJegy);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 JegyekBetoltese();
                 MezoTorles();
@@ -464,7 +555,11 @@ namespace vizprog_eloadas_beadando_app
 
                 context.Jegyek.RemoveRange(kapcsolodoJegyek);
                 context.Targyak.Remove(kijeloltTargy);
-                context.SaveChanges();
+
+                if (!BiztonsagosMentes())
+                {
+                    return;
+                }
 
                 TargyakBetoltese();
                 MezoTorles();
